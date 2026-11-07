@@ -4,15 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log in | Digital Cookbook</title>
+    <script
+      src="https://kit.fontawesome.com/334eeaa4c4.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="login-page">
     <header>
-      <a href="index.html" class="logo">Digital Cookbook</a>
-
+      <a href="index.html" class="logo"
+        ><i class="fa-solid fa-book-open" aria-hidden="true"></i>Digital
+        Cookbook</a
+      >
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+        </ul>
+      </nav>
       <div>
-        <a href="login.html">Log in</a>
-        <a href="register.html">Sign up</a>
+        <a href="add-recipe.html">Add recipe</a>
+        <span>John Doe</span>
         <button type="button">Menu</button>
+      </div>
+      <div id="main-menu" hidden>
+        <form action="recipes.html" method="get">
+          <label for="quick-search">Quick search</label>
+          <input
+            type="search"
+            name="quick-search"
+            id="quick-search"
+            placeholder="Find a recipe or ingredient…"
+          />
+          <button type="submit">Search</button>
+        </form>
+        <div>
+          <h2>Explore the cookbook</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">All recipes</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="add-recipe.html">Add new recipe</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Recipe categories</h2>
+          <ul>
+            <li><a href="#">Breakfast</a></li>
+            <li><a href="#">Lunch</a></li>
+            <li><a href="#">Dinner</a></li>
+            <li><a href="#">Desserts</a></li>
+            <li><a href="#">Soups</a></li>
+            <li><a href="#">Salads</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Account</h2>
+          <p>John Doe</p>
+          <p>john.doe@example.com</p>
+          <hr />
+          <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">My recipes</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Log out</a></li>
+          </ul>
+        </div>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
       </div>
     </header>
 

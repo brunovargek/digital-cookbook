@@ -5,5 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <a href="index.html" class="logo"
+        ><i class="fa-solid fa-book-open" aria-hidden="true"></i>Digital
+        Cookbook</a
+      >
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="add-recipe.html">Add recipe</a>
+        <span>John Doe</span>
+        <button type="button">Menu</button>
+      </div>
+      <div id="main-menu" hidden>
+        <form action="recipes.html" method="get">
+          <label for="quick-search">Quick search</label>
+          <input
+            type="search"
+            name="quick-search"
+            id="quick-search"
+            placeholder="Find a recipe or ingredient…"
+          />
+          <button type="submit">Search</button>
+        </form>
+        <div>
+          <h2>Explore the cookbook</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">All recipes</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="add-recipe.html">Add new recipe</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Recipe categories</h2>
+          <ul>
+            <li><a href="#">Breakfast</a></li>
+            <li><a href="#">Lunch</a></li>
+            <li><a href="#">Dinner</a></li>
+            <li><a href="#">Desserts</a></li>
+            <li><a href="#">Soups</a></li>
+            <li><a href="#">Salads</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Account</h2>
+          <p>John Doe</p>
+          <p>john.doe@example.com</p>
+          <hr />
+          <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">My recipes</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Log out</a></li>
+          </ul>
+        </div>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </header>
+    <main></main>
+    <footer>
+      <p>&copy; 2026 My Cookbook</p>
+      <nav>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms of use</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>

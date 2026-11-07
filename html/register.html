@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up | Digital cookbook</title>
+    <script
+      src="https://kit.fontawesome.com/334eeaa4c4.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <a href="#" class="logo">Digital Cookbook</a>
+      <a href="index.html" class="logo"
+        ><i class="fa-solid fa-book-open"></i>Digital Cookbook</a
+      >
 
       <div>
         <a href="login.html">Log in</a>
@@ -63,6 +69,18 @@
               placeholder="name@example.com"
               autocomplete="email"
               required
+            />
+          </div>
+          <div>
+            <label for="birth-date">Date of birth *</label>
+            <input
+              type="date"
+              name="birth-date"
+              id="birth-date"
+              required
+              autocomplete="bday"
+              min="1900-01-01"
+              max="2026-11-07"
             />
           </div>
           <div>
