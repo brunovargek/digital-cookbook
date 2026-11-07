@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in | Digital Cookbook</title>
+  </head>
+  <body class="login-page">
+    <header>
+      <a href="index.html" class="logo">Digital Cookbook</a>
+
+      <div>
+        <a href="login.html">Log in</a>
+        <a href="register.html">Sign up</a>
+        <button type="button">Menu</button>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <img
+          src="../assets/images/placeholder.jpeg"
+          alt="Digital cookbook illustration"
+        />
+        <h1>Your favorite recipes, all in one place.</h1>
+        <p>
+          Find inspiration for every day, save the recipes you love, and share
+          your own culinary ideas.
+        </p>
+      </section>
+
+      <section>
+        <form action="" method="post">
+          <h2>Welcome back</h2>
+          <p>Sign in to your digital cookbook.</p>
+
+          <div>
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="name@example.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+
+          <div>
+            <label>
+              <input type="checkbox" name="remember" id="remember" />
+              Remember me
+            </label>
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <div>
+            <button type="submit" id="login-button">Log in</button>
+          </div>
+
+          <p>Don't have an account? <a href="register.html">Sign up</a></p>
+          <p>
+            <a href="index.html">Continue browsing without logging in &rarr;</a>
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

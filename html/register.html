@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up | Digital cookbook</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Digital Cookbook</a>
+
+      <div>
+        <a href="login.html">Log in</a>
+        <a href="register.html">Sign up</a>
+        <button type="button">Menu</button>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <img
+          src="../assets/images/placeholder.jpeg"
+          alt="Cooking community illustration"
+        />
+        <h1>Join our trusted cooking community.</h1>
+        <p>
+          Save your favorite recipes. Share your specialties. Find inspiration
+          for every meal.
+        </p>
+      </section>
+      <section>
+        <form action="" method="post">
+          <h2>Create an account</h2>
+          <p>Your personal cookbook starts here.</p>
+          <div>
+            <label for="first-name">First name *</label>
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="John"
+              autocomplete="given-name"
+              required
+            />
+          </div>
+          <div>
+            <label for="last-name">Last name *</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Doe"
+              autocomplete="family-name"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="name@example.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div>
+            <label for="password">Password *</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="8"
+              placeholder="Enter your password"
+              autocomplete="new-password"
+              required
+            />
+            <p>At least 8 characters.</p>
+          </div>
+          <div>
+            <label for="confirm-password">Confirm password *</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              minlength="8"
+              placeholder="Re-enter your password"
+              autocomplete="new-password"
+              required
+            />
+          </div>
+          <div>
+            <label>
+              <input
+                type="checkbox"
+                name="accept-terms"
+                id="accept-terms"
+                required
+              />
+              I accept the Terms of use and Privacy policy. *
+            </label>
+          </div>
+          <div>
+            <button type="submit" id="signup-button">Sign up</button>
+          </div>
+          <p>Already have an account? <a href="login.html">Log in</a></p>
+          <p>* Required fields</p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
