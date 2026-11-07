@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Sign up | Digital cookbook</title>
   </head>
   <body>
     <header>
-      <a href="#" class="logo">My Cookbook</a>
+      <a href="#" class="logo">Digital Cookbook</a>
 
       <div>
-        <a href="#">Log in</a>
-        <a href="#">Sign up</a>
+        <a href="login.html">Log in</a>
+        <a href="register.html">Sign up</a>
         <button type="button">Menu</button>
       </div>
     </header>
@@ -19,7 +19,7 @@
     <main>
       <section>
         <img
-          src="/assets/images/placeholder.jpeg"
+          src="../assets/images/placeholder.jpeg"
           alt="Cooking community illustration"
         />
         <h1>Join our trusted cooking community.</h1>
@@ -39,6 +39,7 @@
               name="first-name"
               id="first-name"
               placeholder="John"
+              autocomplete="given-name"
               required
             />
           </div>
@@ -49,6 +50,7 @@
               name="last-name"
               id="last-name"
               placeholder="Doe"
+              autocomplete="family-name"
               required
             />
           </div>
@@ -59,6 +61,7 @@
               name="email"
               id="email"
               placeholder="name@example.com"
+              autocomplete="email"
               required
             />
           </div>
@@ -68,9 +71,12 @@
               type="password"
               name="password"
               id="password"
-              placeholder="********"
+              minlength="8"
+              placeholder="Enter your password"
+              autocomplete="new-password"
               required
             />
+            <p>At least 8 characters.</p>
           </div>
           <div>
             <label for="confirm-password">Confirm password *</label>
@@ -78,7 +84,9 @@
               type="password"
               name="confirm-password"
               id="confirm-password"
-              placeholder="********"
+              minlength="8"
+              placeholder="Re-enter your password"
+              autocomplete="new-password"
               required
             />
           </div>
@@ -94,7 +102,7 @@
             </label>
           </div>
           <div>
-            <button type="submit" id="button-SignUp">Sign up</button>
+            <button type="submit" id="signup-button">Sign up</button>
           </div>
           <p>Already have an account? <a href="login.html">Log in</a></p>
           <p>* Required fields</p>

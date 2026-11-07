@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log in</title>
+    <title>Log in | Digital Cookbook</title>
   </head>
   <body class="login-page">
     <header>
-      <a href="#" class="logo">My Cookbook</a>
+      <a href="index.html" class="logo">Digital Cookbook</a>
 
       <div>
-        <a href="#">Log in</a>
-        <a href="#">Sign up</a>
+        <a href="login.html">Log in</a>
+        <a href="register.html">Sign up</a>
         <button type="button">Menu</button>
       </div>
     </header>
@@ -19,7 +19,7 @@
     <main>
       <section>
         <img
-          src="/assets/images/placeholder.jpeg"
+          src="../assets/images/placeholder.jpeg"
           alt="Digital cookbook illustration"
         />
         <h1>Your favorite recipes, all in one place.</h1>
@@ -41,6 +41,7 @@
               name="email"
               id="email"
               placeholder="name@example.com"
+              autocomplete="email"
               required
             />
           </div>
@@ -52,6 +53,7 @@
               name="password"
               id="password"
               placeholder="Enter your password"
+              autocomplete="current-password"
               required
             />
           </div>
@@ -65,11 +67,13 @@
           </div>
 
           <div>
-            <button type="submit" id="button-Login">Log in</button>
+            <button type="submit" id="login-button">Log in</button>
           </div>
 
           <p>Don't have an account? <a href="register.html">Sign up</a></p>
-          <p><a href="#">Continue browsing without logging in &rarr;</a></p>
+          <p>
+            <a href="index.html">Continue browsing without logging in &rarr;</a>
+          </p>
         </form>
       </section>
     </main>
